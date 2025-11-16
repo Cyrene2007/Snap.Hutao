@@ -59,46 +59,46 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -845,6 +845,21 @@
   <data name="ServiceAvatarInfoPropertySkillCDReduce" xml:space="preserve">
     <value>クールダウン短縮</value>
   </data>
+  <data name="ServiceBackgroundActivityDefaultDescription" xml:space="preserve">
+    <value>準備中…</value>
+  </data>
+  <data name="ServiceBackgroundActivityFullTrustInitialization" xml:space="preserve">
+    <value>コンポーネント注入の初期化</value>
+  </data>
+  <data name="ServiceBackgroundActivityFullTrustInitializationDescription" xml:space="preserve">
+    <value>必要な場合にのみ実行</value>
+  </data>
+  <data name="ServiceBackgroundActivityMetadataInitialization" xml:space="preserve">
+    <value>メタデータの初期化</value>
+  </data>
+  <data name="ServiceBackgroundActivityMetadataInitializationDescription" xml:space="preserve">
+    <value>準備中では、長時間反応がない場合は再起動してください</value>
+  </data>
   <data name="ServiceBackgroundImageTypeBing" xml:space="preserve">
     <value>Bing 日替わり画像</value>
   </data>
@@ -987,6 +1002,9 @@
   <data name="ServiceGameIslandFileSystemGetGameVersionFailed" xml:space="preserve">
     <value>ローカルゲームバージョンの取得に失敗しました。注入配置情報を取得できません</value>
   </data>
+  <data name="ServiceGameIslandTargetVersionFileNotExists" xml:space="preserve">
+    <value>現在のゲームバージョンはサポートされていません</value>
+  </data>
   <data name="ServiceGameLaunchExecutionBetterGenshinImpactStarted" xml:space="preserve">
     <value>Better GI が起動しました</value>
   </data>
@@ -1029,6 +1047,9 @@
   </data>
   <data name="ServiceGameLaunchingHandlerEmbeddedYaeIslandNotEnabled" xml:space="preserve">
     <value>Embedded Yae を使う前に、関連するリスクを理解し「ゲームランチャー」ページで注入機能を有効にする必要があります</value>
+  </data>
+  <data name="ServiceGameLaunchingHandlerGameProcessStartRepositorySyncFailed" xml:space="preserve">
+    <value>必要なゲーム起動のコンポーネントの取得中にエラーが発生しました</value>
   </data>
   <data name="ServiceGameLocatorFileOpenPickerCommitText" xml:space="preserve">
     <value>ゲーム本体を選択する</value>
@@ -1107,6 +1128,12 @@
   <data name="ServiceGameSetMultiChannelUnauthorizedAccess" xml:space="preserve">
     <value>設定ファイルの読み込み又は保存ができません。管理者モードで再試行してください。</value>
   </data>
+  <data name="ServiceGitRepositoryOperationCompleted" xml:space="preserve">
+    <value>操作は完了しました</value>
+  </data>
+  <data name="ServiceGitRepositoryOperationFailed" xml:space="preserve">
+    <value>操作に失敗しました</value>
+  </data>
   <data name="ServiceHutaoUserGachaLogExpiredAt" xml:space="preserve">
     <value>祈願履歴のアップロードサービス期限は</value>
   </data>
@@ -1181,6 +1208,9 @@
   </data>
   <data name="ServiceYaeWaitForGameResponseMessage" xml:space="preserve">
     <value>ゲームデータを待機中</value>
+  </data>
+  <data name="UIViewMainTitleBarBackgroundActivityAction" xml:space="preserve">
+    <value>バックグラウンドタスク</value>
   </data>
   <data name="UIViewPageAvatarPropertyRecommendedAppendProperties" xml:space="preserve">
     <value>追加ステータス推奨</value>
@@ -2155,7 +2185,7 @@
     <value>クイックスイッチ</value>
   </data>
   <data name="ViewModelRoleCombatHeraldry" xml:space="preserve">
-    <value>{0}に到着</value>
+    <value>{0} に到着</value>
   </data>
   <data name="ViewModelRoleCombatRound" xml:space="preserve">
     <value>第 {0} 幕</value>
@@ -2840,7 +2870,7 @@
     <value>任務自動化</value>
   </data>
   <data name="ViewPageLaunchGameDangerousDescriptionHint" xml:space="preserve">
-    <value>注入機能は非常に危険で、重大な結果をもたらす可能性があるため、慎重に使用してください！</value>
+    <value>注入機能及び本ソフトウェアは、miHoYo利用規約第10条第2項で規定されるプラグイン、チートツール、または合法的に認可されていない第三者のツール/サービスに該当します。継続して使用することにより、この行為が非常に危険であり、その結果はご自身で負担することを承知したものとみなします。\nセキュリティ上の理由から、当社は事前通知なしに、この機能の使用を随時変更、終了、または中止する権利を単独で決定する権利を留保します。</value>
   </data>
   <data name="ViewPageLaunchGameDisableFogDescription" xml:space="preserve">
     <value>照明レンダリングの霧を除去する</value>
@@ -2855,7 +2885,7 @@
     <value>削除</value>
   </data>
   <data name="ViewPageLaunchGameElevationDescription" xml:space="preserve">
-    <value>ゲームファイル管理/サーバーの切り換え/注入機能には管理者権限が必要です</value>
+    <value>ゲームファイル管理/サーバーの切り換えには管理者権限が必要です</value>
   </data>
   <data name="ViewPageLaunchGameEventCameraMoveHotSwitchHeader" xml:space="preserve">
     <value>元素爆発カットインを削除する</value>
@@ -3842,10 +3872,10 @@
     <value>{0} {1:HH:mm} に上限到達</value>
   </data>
   <data name="WebDailyNoteHomeCoinRecoveryCompleted" xml:space="preserve">
-    <value>洞天宝銭が上限に達しました</value>
+    <value>洞天宝銭が保存上限に達しました</value>
   </data>
   <data name="WebDailyNoteHomeCoinRecoveryTargetTime" xml:space="preserve">
-    <value>{0:MM.dd HH:mm} に上限到達</value>
+    <value>{0:MM.dd HH:mm} まで保存上限に到達</value>
   </data>
   <data name="WebDailyNoteHomeLocked" xml:space="preserve">
     <value>塵歌壺が未解放です</value>
@@ -3857,7 +3887,7 @@
     <value>天然樹脂は完全に回復しました</value>
   </data>
   <data name="WebDailyNoteResinRecoveryTargetTime" xml:space="preserve">
-    <value>{0:MM.dd HH:mm} 後にすべて回復</value>
+    <value>{0:MM.dd HH:mm} まで樹脂が全て回復</value>
   </data>
   <data name="WebDailyNoteStoredAttendanceRefreshCountdown" xml:space="preserve">
     <value>{0:c} 後にリセット</value>
