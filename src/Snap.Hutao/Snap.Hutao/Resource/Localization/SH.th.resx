@@ -59,46 +59,46 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -845,6 +845,21 @@
   <data name="ServiceAvatarInfoPropertySkillCDReduce" xml:space="preserve">
     <value>ลดคูลดาวน์</value>
   </data>
+  <data name="ServiceBackgroundActivityDefaultDescription" xml:space="preserve">
+    <value>กำลังเตรียม...</value>
+  </data>
+  <data name="ServiceBackgroundActivityFullTrustInitialization" xml:space="preserve">
+    <value>การเริ่มต้นองค์ประกอบการฉีด</value>
+  </data>
+  <data name="ServiceBackgroundActivityFullTrustInitializationDescription" xml:space="preserve">
+    <value>ดำเนินการเฉพาะเมื่อจำเป็น</value>
+  </data>
+  <data name="ServiceBackgroundActivityMetadataInitialization" xml:space="preserve">
+    <value>การเริ่มต้นข้อมูลเมตา</value>
+  </data>
+  <data name="ServiceBackgroundActivityMetadataInitializationDescription" xml:space="preserve">
+    <value>กำลังเตรียม หากไม่มีการตอบสนองเป็นเวลานาน โปรดลองรีสตาร์ท</value>
+  </data>
   <data name="ServiceBackgroundImageTypeBing" xml:space="preserve">
     <value>ภาพพื้นหลัง Bing ประจำวัน</value>
   </data>
@@ -987,6 +1002,9 @@
   <data name="ServiceGameIslandFileSystemGetGameVersionFailed" xml:space="preserve">
     <value>ไม่สามารถรับเวอร์ชันเกมในเครื่องได้ ไม่สามารถรับข้อมูลการกำหนดค่าการฉีด</value>
   </data>
+  <data name="ServiceGameIslandTargetVersionFileNotExists" xml:space="preserve">
+    <value>ยังไม่รองรับเวอร์ชันเกมปัจจุบัน</value>
+  </data>
   <data name="ServiceGameLaunchExecutionBetterGenshinImpactStarted" xml:space="preserve">
     <value>BetterGI เปิดใช้งานแล้ว</value>
   </data>
@@ -1028,6 +1046,9 @@
   </data>
   <data name="ServiceGameLaunchingHandlerEmbeddedYaeIslandNotEnabled" xml:space="preserve">
     <value>คุณควรทราบถึงความเสี่ยงที่เกี่ยวข้องและเปิดฟังก์ชันการฝังในหน้าเปิดเกมก่อนที่จะใช้ Embedded Yae</value>
+  </data>
+  <data name="ServiceGameLaunchingHandlerGameProcessStartRepositorySyncFailed" xml:space="preserve">
+    <value>เกิดข้อผิดพลาดขณะรับองค์ประกอบที่จำเป็นสำหรับการเริ่มเกม</value>
   </data>
   <data name="ServiceGameLocatorFileOpenPickerCommitText" xml:space="preserve">
     <value>เลือกไฟล์เกม</value>
@@ -1106,6 +1127,12 @@
   <data name="ServiceGameSetMultiChannelUnauthorizedAccess" xml:space="preserve">
     <value>ไม่สามารถอ่านหรือบันทึกไฟล์กำหนดค่า โปรดลองใหม่อีกครั้งในโหมดผู้ดูแลระบบ</value>
   </data>
+  <data name="ServiceGitRepositoryOperationCompleted" xml:space="preserve">
+    <value>ดำเนินการเสร็จสิ้น</value>
+  </data>
+  <data name="ServiceGitRepositoryOperationFailed" xml:space="preserve">
+    <value>ดำเนินการล้มเหลว</value>
+  </data>
   <data name="ServiceHutaoUserGachaLogExpiredAt" xml:space="preserve">
     <value>บริการอัปโหลดบันทึกการอธิษฐานมีผลถึง</value>
   </data>
@@ -1180,6 +1207,9 @@
   </data>
   <data name="ServiceYaeWaitForGameResponseMessage" xml:space="preserve">
     <value>กำลังรอข้อมูลเกม</value>
+  </data>
+  <data name="UIViewMainTitleBarBackgroundActivityAction" xml:space="preserve">
+    <value>งานพื้นหลัง</value>
   </data>
   <data name="UIViewPageAvatarPropertyRecommendedAppendProperties" xml:space="preserve">
     <value>คำแนะนำคุณสมบัติเพิ่มเติม</value>
@@ -1557,7 +1587,7 @@
     <value>กำลังแปลงไคลเอนต์เกม</value>
   </data>
   <data name="ViewDialogQRCodeTitle" xml:space="preserve">
-    <value>ใช้แอป&lt;米游社. Term doesn't have a defined translation. Please translate it yourself.&gt;สแกนคิวอาร์โค้ด</value>
+    <value>ใช้แอป&lt;米游社. Term doesn't have a defined translation. Please translate it yourself.>สแกนคิวอาร์โค้ด</value>
   </data>
   <data name="ViewDialogReconfirmHint" xml:space="preserve">
     <value>เพื่อให้แน่ใจว่าผู้เปิดใช้งานฟังก์ชันมีความสามารถในการตัดสินใจอย่างอิสระ เราจะอัปเดตเงื่อนไขการเปิดใช้งานฟังก์ชันเหล่านี้เป็นระยะ หากคุณเป็นผู้สร้างเนื้อหา โปรดอย่าแบ่งปันวิธีการเปิดใช้งานเฉพาะกับผู้ชมของคุณ</value>
@@ -2199,7 +2229,7 @@
     <value>พื้นที่ดิสก์ที่ใช้ไป: {0}</value>
   </data>
   <data name="ViewModelSettingGeetestCustomUrlSucceed" xml:space="preserve">
-    <value>กำหนดค่า URL แบบผสมสำหรับการตรวจสอบแบบ&lt;0&gt;无感验证&lt;/0&gt;สำเร็จ</value>
+    <value>กำหนดค่า URL แบบผสมสำหรับการตรวจสอบแบบ&lt;0>无感验证&lt;/0>สำเร็จ</value>
   </data>
   <data name="ViewModelSettingResetStaticResourceProgress" xml:space="preserve">
     <value>กำลังรีเซ็ตทรัพยากรภาพ</value>
@@ -2838,7 +2868,8 @@
     <value>งานอัตโนมัติ</value>
   </data>
   <data name="ViewPageLaunchGameDangerousDescriptionHint" xml:space="preserve">
-    <value>การใส่โค้ดเป็นสิ่งที่อันตรายมากและอาจก่อให้เกิดผลร้ายแรง โปรดใช้ด้วยความระมัดระวัง</value>
+    <value>ฟังก์ชันการฉีดและซอฟต์แวร์นี้เป็นปลั๊กอิน เครื่องมือภายนอก หรือเครื่องมือ/บริการของบุคคลที่สามที่ไม่มีสิทธิ์ถูกต้องตามกฎหมาย ตามที่กำหนดในข้อ 10 วรรค 2 ของข้อตกลงผู้ใช้ของ HoYoverse การใช้งานต่อไปแสดงว่าคุณทราบว่าการกระทำนี้อันตรายมากและผลที่ตามมาจะเป็นความรับผิดชอบของคุณเอง
+ด้วยเหตุผลด้านความปลอดภัย เราขอสงวนสิทธิ์ในการตัดสินใจอย่างอิสระที่จะเปลี่ยนแปลง ยุติ หรือระงับการใช้งานฟังก์ชันนี้ของคุณได้ตลอดเวลา โดยไม่ต้องแจ้งให้คุณทราบล่วงหน้า</value>
   </data>
   <data name="ViewPageLaunchGameDisableFogDescription" xml:space="preserve">
     <value>ลบหมอกในการเรนเดอร์แสง</value>
@@ -2853,7 +2884,7 @@
     <value>ลบ</value>
   </data>
   <data name="ViewPageLaunchGameElevationDescription" xml:space="preserve">
-    <value>การจัดการไฟล์เกม/การสลับเซิร์ฟเวอร์เกม/คุณสมบัติการแทรกต้องใช้สิทธิ์ผู้ดูแลระบบ</value>
+    <value>การจัดการไฟล์เกม/การเปลี่ยนเซิร์ฟเวอร์เกมต้องการสิทธิ์ผู้ดูแลระบบ</value>
   </data>
   <data name="ViewPageLaunchGameEventCameraMoveHotSwitchHeader" xml:space="preserve">
     <value>ลบการถ่ายภาพระยะใกล้ของท่าไม้ตาย</value>
@@ -3891,7 +3922,7 @@
     <value>{0} วินาที</value>
   </data>
   <data name="WebDailyNoteVerificationFailed" xml:space="preserve">
-    <value />
+    <value>การตรวจสอบล้มเหลว โปรดตรวจสอบด้วยตนเองหรือไปที่หน้า "<text>米游社</text>-เครื่องมือเดินทาง-บันทึกกิจกรรม-บันทึกประจำวัน" เพื่อดู</value>
   </data>
   <data name="WebEnkaResponseStatusCode400" xml:space="preserve">
     <value>รูปแบบ UID ไม่ถูกต้อง</value>
@@ -3969,7 +4000,7 @@
     <value>Snap Hutao อยู่ระหว่างการบำรุงรักษาเซิร์ฟเวอร์</value>
   </data>
   <data name="WebIndexOrSpiralAbyssVerificationFailed" xml:space="preserve">
-    <value />
+    <value>การตรวจสอบล้มเหลว โปรดตรวจสอบด้วยตนเองหรือไปที่หน้า "<text>米游社</text>-เครื่องมือเดินทาง-บันทึกกิจกรรม" เพื่อดู</value>
   </data>
   <data name="WebRequestBuilderExceptionDescription" xml:space="preserve">
     <value>พบปัญหาขณะร้องขอ {0}</value>
