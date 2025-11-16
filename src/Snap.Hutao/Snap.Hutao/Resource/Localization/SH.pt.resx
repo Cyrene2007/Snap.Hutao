@@ -59,46 +59,46 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -845,6 +845,21 @@
   <data name="ServiceAvatarInfoPropertySkillCDReduce" xml:space="preserve">
     <value>Redução do Tempo de Recarga</value>
   </data>
+  <data name="ServiceBackgroundActivityDefaultDescription" xml:space="preserve">
+    <value>A preparar...</value>
+  </data>
+  <data name="ServiceBackgroundActivityFullTrustInitialization" xml:space="preserve">
+    <value>Inicialização do componente de injeção</value>
+  </data>
+  <data name="ServiceBackgroundActivityFullTrustInitializationDescription" xml:space="preserve">
+    <value>Executado apenas quando necessário</value>
+  </data>
+  <data name="ServiceBackgroundActivityMetadataInitialization" xml:space="preserve">
+    <value>Inicialização de metadados</value>
+  </data>
+  <data name="ServiceBackgroundActivityMetadataInitializationDescription" xml:space="preserve">
+    <value>A preparar, se não houver resposta durante muito tempo, tente reiniciar</value>
+  </data>
   <data name="ServiceBackgroundImageTypeBing" xml:space="preserve">
     <value>Imagem do Dia do Bing</value>
   </data>
@@ -987,6 +1002,9 @@
   <data name="ServiceGameIslandFileSystemGetGameVersionFailed" xml:space="preserve">
     <value>Falha ao obter a versão local do jogo, impossível obter informações de configuração de injeção</value>
   </data>
+  <data name="ServiceGameIslandTargetVersionFileNotExists" xml:space="preserve">
+    <value>A versão atual do jogo ainda não é suportada</value>
+  </data>
   <data name="ServiceGameLaunchExecutionBetterGenshinImpactStarted" xml:space="preserve">
     <value>BetterGI iniciado</value>
   </data>
@@ -1028,6 +1046,9 @@
   </data>
   <data name="ServiceGameLaunchingHandlerEmbeddedYaeIslandNotEnabled" xml:space="preserve">
     <value>Antes de usar o Yae Incorporado, você deve estar ciente dos riscos associados e ativar a funcionalidade de injeção na página "Iniciar Jogo"</value>
+  </data>
+  <data name="ServiceGameLaunchingHandlerGameProcessStartRepositorySyncFailed" xml:space="preserve">
+    <value>Ocorreu um erro ao obter os componentes necessários para iniciar o jogo</value>
   </data>
   <data name="ServiceGameLocatorFileOpenPickerCommitText" xml:space="preserve">
     <value>Selecione o executável do jogo</value>
@@ -1106,6 +1127,12 @@ Espaço disponível: {2}</value>
   <data name="ServiceGameSetMultiChannelUnauthorizedAccess" xml:space="preserve">
     <value>Não foi possível ler ou salvar o perfil, tente novamente no modo de administrador</value>
   </data>
+  <data name="ServiceGitRepositoryOperationCompleted" xml:space="preserve">
+    <value>Operação completa</value>
+  </data>
+  <data name="ServiceGitRepositoryOperationFailed" xml:space="preserve">
+    <value>Operação falhou</value>
+  </data>
   <data name="ServiceHutaoUserGachaLogExpiredAt" xml:space="preserve">
     <value>O serviço de envio de histórico de orações é válido até</value>
   </data>
@@ -1180,6 +1207,9 @@ Espaço disponível: {2}</value>
   </data>
   <data name="ServiceYaeWaitForGameResponseMessage" xml:space="preserve">
     <value>Aguardando dados do jogo</value>
+  </data>
+  <data name="UIViewMainTitleBarBackgroundActivityAction" xml:space="preserve">
+    <value>Tarefa em segundo plano</value>
   </data>
   <data name="UIViewPageAvatarPropertyRecommendedAppendProperties" xml:space="preserve">
     <value>Recomendação de propriedade adicional</value>
@@ -2838,7 +2868,8 @@ Espaço disponível: {2}</value>
     <value>Tarefas automatizadas</value>
   </data>
   <data name="ViewPageLaunchGameDangerousDescriptionHint" xml:space="preserve">
-    <value>A funcionalidade de injeção é muito perigosa e pode ter consequências graves. Use com cautela.</value>
+    <value>A função de injeção e este software pertencem a plug-ins, programas externos ou ferramentas/serviços de terceiros não autorizados legalmente, conforme definido no Artigo 10, Parágrafo 2 do Acordo de Utilizador da miHoYo. Continuar a utilizar indica que está ciente de que este comportamento é muito perigoso e que as consequências são da sua responsabilidade.
+Por razões de segurança, reservamo-nos o direito de alterar, terminar ou suspender a sua utilização desta função a qualquer momento, de forma independente, sem aviso prévio.</value>
   </data>
   <data name="ViewPageLaunchGameDisableFogDescription" xml:space="preserve">
     <value>Remover a névoa na renderização de luz</value>
@@ -2853,7 +2884,7 @@ Espaço disponível: {2}</value>
     <value>Remover</value>
   </data>
   <data name="ViewPageLaunchGameElevationDescription" xml:space="preserve">
-    <value>O gerenciamento de arquivos de jogos/alternar o servidor de jogos/recurso de injeção requer permissão de administrador</value>
+    <value>A gestão de ficheiros do jogo/a mudança de servidor do jogo requer permissões de administrador</value>
   </data>
   <data name="ViewPageLaunchGameEventCameraMoveHotSwitchHeader" xml:space="preserve">
     <value>Remover close-up de explosão elemental</value>
@@ -2931,7 +2962,7 @@ Espaço disponível: {2}</value>
     <value>Sobreposição no Jogo</value>
   </data>
   <data name="ViewPageLaunchGameOverlayHideDescription" xml:space="preserve">
-    <value />
+    <value>Definir o atalho para mostrar/ocultar a sobreposição no jogo <b>（</b>iniciar com o jogo<b>）</b></value>
   </data>
   <data name="ViewPageLaunchGameOverlayHideHeader" xml:space="preserve">
     <value>Mostrar/Ocultar Sobreposição no Jogo</value>
