@@ -59,46 +59,46 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -845,6 +845,21 @@
   <data name="ServiceAvatarInfoPropertySkillCDReduce" xml:space="preserve">
     <value>Bekleme Süresi Azaltma</value>
   </data>
+  <data name="ServiceBackgroundActivityDefaultDescription" xml:space="preserve">
+    <value>Hazırlanıyor...</value>
+  </data>
+  <data name="ServiceBackgroundActivityFullTrustInitialization" xml:space="preserve">
+    <value>Enjeksiyon bileşeni başlatılıyor</value>
+  </data>
+  <data name="ServiceBackgroundActivityFullTrustInitializationDescription" xml:space="preserve">
+    <value>Yalnızca gerekli olduğunda yürütülür</value>
+  </data>
+  <data name="ServiceBackgroundActivityMetadataInitialization" xml:space="preserve">
+    <value>Meta veri başlatılıyor</value>
+  </data>
+  <data name="ServiceBackgroundActivityMetadataInitializationDescription" xml:space="preserve">
+    <value>Hazırlanıyor, uzun süre yanıt vermezse yeniden başlatmayı deneyin</value>
+  </data>
   <data name="ServiceBackgroundImageTypeBing" xml:space="preserve">
     <value>Bing Günlük Duvar Kağıdı</value>
   </data>
@@ -987,6 +1002,9 @@
   <data name="ServiceGameIslandFileSystemGetGameVersionFailed" xml:space="preserve">
     <value>Yerel oyun sürümü alınamadı, enjeksiyon yapılandırma bilgileri alınamıyor</value>
   </data>
+  <data name="ServiceGameIslandTargetVersionFileNotExists" xml:space="preserve">
+    <value>Mevcut oyun sürümü henüz desteklenmiyor</value>
+  </data>
   <data name="ServiceGameLaunchExecutionBetterGenshinImpactStarted" xml:space="preserve">
     <value>BetterGI başlatıldı</value>
   </data>
@@ -1028,6 +1046,9 @@
   </data>
   <data name="ServiceGameLaunchingHandlerEmbeddedYaeIslandNotEnabled" xml:space="preserve">
     <value>Embedded Yae'yi kullanmadan önce, ilgili riskleri bilmeniz ve "Oyunu Başlat" sayfasında yerleştirme işlevini açmanız gerekir</value>
+  </data>
+  <data name="ServiceGameLaunchingHandlerGameProcessStartRepositorySyncFailed" xml:space="preserve">
+    <value>Gerekli oyun başlatma bileşenleri alınırken bir hata oluştu</value>
   </data>
   <data name="ServiceGameLocatorFileOpenPickerCommitText" xml:space="preserve">
     <value>Oyun yürütülebilir dosyasını seçin</value>
@@ -1089,7 +1110,7 @@ Kullanılabilir Alan: {2}</value>
     <value>Yedek: {0}</value>
   </data>
   <data name="ServiceGamePackageConvertMoveFileRename" xml:space="preserve">
-    <value>Yeniden adlandır: {0} -&gt; {1}</value>
+    <value>Yeniden adlandır: {0} -> {1}</value>
   </data>
   <data name="ServiceGamePackageConvertMoveFileRestore" xml:space="preserve">
     <value>Değiştir: {0}</value>
@@ -1105,6 +1126,12 @@ Kullanılabilir Alan: {2}</value>
   </data>
   <data name="ServiceGameSetMultiChannelUnauthorizedAccess" xml:space="preserve">
     <value>Yapılandırma dosyası okunamıyor veya kaydedilemiyor, lütfen yönetici modunda tekrar deneyin</value>
+  </data>
+  <data name="ServiceGitRepositoryOperationCompleted" xml:space="preserve">
+    <value>İşlem tamamlandı</value>
+  </data>
+  <data name="ServiceGitRepositoryOperationFailed" xml:space="preserve">
+    <value>İşlem başarısız oldu</value>
   </data>
   <data name="ServiceHutaoUserGachaLogExpiredAt" xml:space="preserve">
     <value>Dilek kaydı yükleme hizmetinin geçerlilik süresi:</value>
@@ -1180,6 +1207,9 @@ Kullanılabilir Alan: {2}</value>
   </data>
   <data name="ServiceYaeWaitForGameResponseMessage" xml:space="preserve">
     <value>Oyun verileri bekleniyor</value>
+  </data>
+  <data name="UIViewMainTitleBarBackgroundActivityAction" xml:space="preserve">
+    <value>Arka plan görevleri</value>
   </data>
   <data name="UIViewPageAvatarPropertyRecommendedAppendProperties" xml:space="preserve">
     <value>Ek Özellik Tavsiyesi</value>
@@ -1473,7 +1503,7 @@ Kullanılabilir Alan: {2}</value>
     <value>Örnek</value>
   </data>
   <data name="ViewDialogGeetestCustomUrlTitle" xml:space="preserve">
-    <value />
+    <value><span style="font-style: italic;">无感验证</span> API'sini yapılandır</value>
   </data>
   <data name="ViewDialogHutaoPassportLoginTitle" xml:space="preserve">
     <value>Snap Hutao Passport'a Giriş Yap</value>
@@ -1557,7 +1587,7 @@ Kullanılabilir Alan: {2}</value>
     <value>Oyun İstemcisi Dönüştürülüyor</value>
   </data>
   <data name="ViewDialogQRCodeTitle" xml:space="preserve">
-    <value />
+    <value><span style="font-style: italic;">米游社</span> ile QR kodunu tara</value>
   </data>
   <data name="ViewDialogReconfirmHint" xml:space="preserve">
     <value>Fonksiyon kullanıcılarının bağımsız karar verme yeteneğine sahip olmasını sağlamak için, bu fonksiyonların etkinleştirme koşullarını düzensiz olarak güncelleyeceğiz. Eğer bir içerik üreticisiyseniz, Snap Hutao ile ilgili içerik oluştururken lütfen belirli etkinleştirme yöntemlerini izleyicilerinizle paylaşmayın.</value>
@@ -2838,7 +2868,8 @@ Kullanılabilir Alan: {2}</value>
     <value>Otomatik Görevler</value>
   </data>
   <data name="ViewPageLaunchGameDangerousDescriptionHint" xml:space="preserve">
-    <value>Enjeksiyon çok tehlikelidir ve ciddi sonuçlara yol açabilir, lütfen dikkatli kullanın</value>
+    <value>Enjeksiyon işlevi ve bu yazılım, miHoYo Kullanıcı Sözleşmesi'nin 10. Maddesi 2. Fıkrası'nda tanımlanan eklenti, hile veya yasal olarak yetkilendirilmemiş üçüncü taraf araçları/hizmetleri kapsamındadır. Kullanmaya devam etmeniz, bu eylemin çok tehlikeli olduğunu ve sonuçlarından kendinizin sorumlu olacağını bildiğinizi gösterir.
+Güvenlik nedenleriyle, bu işlevi kullanımınızı herhangi bir ön bildirimde bulunmaksızın değiştirme, sonlandırma veya durdurma hakkını saklı tutuyoruz.</value>
   </data>
   <data name="ViewPageLaunchGameDisableFogDescription" xml:space="preserve">
     <value>Işık işlemelerinde sisi kaldır</value>
@@ -2853,7 +2884,7 @@ Kullanılabilir Alan: {2}</value>
     <value>Kaldır</value>
   </data>
   <data name="ViewPageLaunchGameElevationDescription" xml:space="preserve">
-    <value>Oyun dosyası yönetimi/oyun sunucusunu değiştirme/enjeksiyon özelliği için yönetici izni gerekiyor</value>
+    <value>Oyun dosya yönetimi/oyun sunucusu değiştirme yönetici izinleri gerektirir</value>
   </data>
   <data name="ViewPageLaunchGameEventCameraMoveHotSwitchHeader" xml:space="preserve">
     <value>Element Patlaması yakın çekimini kaldır</value>
@@ -2931,7 +2962,7 @@ Kullanılabilir Alan: {2}</value>
     <value>Oyun İçi Arayüz</value>
   </data>
   <data name="ViewPageLaunchGameOverlayHideDescription" xml:space="preserve">
-    <value />
+    <value>Oyun içi yer paylaşımını göstermek/gizlemek için kısayol tuşunu ayarla<b>（</b></value>
   </data>
   <data name="ViewPageLaunchGameOverlayHideHeader" xml:space="preserve">
     <value>Oyun İçi Yer Paylaşımını Göster/Gizle</value>
