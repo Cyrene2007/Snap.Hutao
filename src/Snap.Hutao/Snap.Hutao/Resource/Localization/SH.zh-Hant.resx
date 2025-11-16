@@ -59,46 +59,46 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -845,6 +845,21 @@
   <data name="ServiceAvatarInfoPropertySkillCDReduce" xml:space="preserve">
     <value>冷卻縮減</value>
   </data>
+  <data name="ServiceBackgroundActivityDefaultDescription" xml:space="preserve">
+    <value>準備中...</value>
+  </data>
+  <data name="ServiceBackgroundActivityFullTrustInitialization" xml:space="preserve">
+    <value>注入元件初始化</value>
+  </data>
+  <data name="ServiceBackgroundActivityFullTrustInitializationDescription" xml:space="preserve">
+    <value>僅在必要時執行</value>
+  </data>
+  <data name="ServiceBackgroundActivityMetadataInitialization" xml:space="preserve">
+    <value>元資料初始化</value>
+  </data>
+  <data name="ServiceBackgroundActivityMetadataInitializationDescription" xml:space="preserve">
+    <value>準備中，若長時間無反應請嘗試重啟</value>
+  </data>
   <data name="ServiceBackgroundImageTypeBing" xml:space="preserve">
     <value>Bing每日一圖</value>
   </data>
@@ -987,6 +1002,9 @@
   <data name="ServiceGameIslandFileSystemGetGameVersionFailed" xml:space="preserve">
     <value>取得本機遊戲版本失敗，無法取得注入配置資訊</value>
   </data>
+  <data name="ServiceGameIslandTargetVersionFileNotExists" xml:space="preserve">
+    <value>尚未支援當前遊戲版本</value>
+  </data>
   <data name="ServiceGameLaunchExecutionBetterGenshinImpactStarted" xml:space="preserve">
     <value>BetterGI 已啟動</value>
   </data>
@@ -1028,6 +1046,9 @@
   </data>
   <data name="ServiceGameLaunchingHandlerEmbeddedYaeIslandNotEnabled" xml:space="preserve">
     <value>使用 Embedded Yae 前，需要您了解相關風險並在「啟動遊戲」頁面開啟注入功能</value>
+  </data>
+  <data name="ServiceGameLaunchingHandlerGameProcessStartRepositorySyncFailed" xml:space="preserve">
+    <value>在獲取必要的啟動遊戲元件時發生錯誤</value>
   </data>
   <data name="ServiceGameLocatorFileOpenPickerCommitText" xml:space="preserve">
     <value>請選擇遊戲本體</value>
@@ -1106,6 +1127,12 @@
   <data name="ServiceGameSetMultiChannelUnauthorizedAccess" xml:space="preserve">
     <value>無法讀取或儲存設定檔案，請用系統管理員模式重試</value>
   </data>
+  <data name="ServiceGitRepositoryOperationCompleted" xml:space="preserve">
+    <value>操作完成</value>
+  </data>
+  <data name="ServiceGitRepositoryOperationFailed" xml:space="preserve">
+    <value>操作失敗</value>
+  </data>
   <data name="ServiceHutaoUserGachaLogExpiredAt" xml:space="preserve">
     <value>祈願記錄上傳服務有效期限至</value>
   </data>
@@ -1180,6 +1207,9 @@
   </data>
   <data name="ServiceYaeWaitForGameResponseMessage" xml:space="preserve">
     <value>正在等待遊戲資料</value>
+  </data>
+  <data name="UIViewMainTitleBarBackgroundActivityAction" xml:space="preserve">
+    <value>後台任務</value>
   </data>
   <data name="UIViewPageAvatarPropertyRecommendedAppendProperties" xml:space="preserve">
     <value>追加屬性推薦</value>
@@ -2838,7 +2868,8 @@
     <value>自動化任務</value>
   </data>
   <data name="ViewPageLaunchGameDangerousDescriptionHint" xml:space="preserve">
-    <value>注入功能非常危險且有可能會造成嚴重後果，請謹慎使用</value>
+    <value>注入功能及本軟體屬於米哈遊用戶協議第十條第二款規定的插件、外掛或非經合法授權的第三方工具/服務，繼續使用表明您已知曉此行為非常危險且造成的後果由您自行承擔。
+出於安全因素考慮，我們保留獨立決定隨時變更、終止、中止您對此功能的使用權利，無須向您發出任何提前通知。</value>
   </data>
   <data name="ViewPageLaunchGameDisableFogDescription" xml:space="preserve">
     <value>移除光照渲染中的迷霧</value>
@@ -2853,7 +2884,7 @@
     <value>移除</value>
   </data>
   <data name="ViewPageLaunchGameElevationDescription" xml:space="preserve">
-    <value>遊戲檔案管理/切換遊戲伺服器/注入功能需要系統管理員權限</value>
+    <value>遊戲檔案管理/切換遊戲伺服器需要系統管理員權限</value>
   </data>
   <data name="ViewPageLaunchGameEventCameraMoveHotSwitchHeader" xml:space="preserve">
     <value>移除元素爆發鏡頭特寫</value>
