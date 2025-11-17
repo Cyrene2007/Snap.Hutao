@@ -3049,7 +3049,7 @@
     <value>ไม่สามารถปลดล็อคขีดจำกัดเฟรมเรตได้หรือไม่?</value>
   </data>
   <data name="ViewPageLaunchGameUnlockFpsDescription" xml:space="preserve">
-    <value>โปรดปิดตัวเลือก "Vertical Sync" ภายในเกม ซึ่งต้องใช้ GPU ประสิทธิภาพสูงเพื่อรองรับอัตราเฟรมที่สูงขึ้น และตั้งค่าเป็น -1 เพื่ออัตราเฟรมที่ไม่จำกัด</value>
+    <value>请在游戏内关闭「垂直同步」选项，需要高性能的显卡以支持更高的帧率</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccountDescription" xml:space="preserve">
     <value>ลงชื่อเข้าใช้ด้วยบัญชีผู้ใช้ MiYouShe / HoYoLAB ที่เลือกในปัจจุบัน ต้องเปิดใช้งาน "พารามิเตอร์เริ่มต้น"</value>
