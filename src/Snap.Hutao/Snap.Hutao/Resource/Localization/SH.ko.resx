@@ -3049,7 +3049,7 @@
     <value>프레임 속도 상한을 해제할 수 없나요?</value>
   </data>
   <data name="ViewPageLaunchGameUnlockFpsDescription" xml:space="preserve">
-    <value>게임에서 수직 동기화 기능을 꺼주세요. 더 높은 프레임 속도를 지원하려면 고성능 그래픽 카드가 필요하며, 무제한 프레임 속도를 위해서는 값을 -1로 설정하세요.</value>
+    <value>게임에서 수직 동기화 기능을 꺼주세요. 더 높은 프레임 속도를 지원하려면 고성능 그래픽 카드가 필요합니다</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccountDescription" xml:space="preserve">
     <value>현재 선택된 미유셰 / HoYoLAB 사용자로 로그인하려면 '시작 매개변수'를 활성화해야 합니다.</value>
