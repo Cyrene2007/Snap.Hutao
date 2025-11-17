@@ -2868,8 +2868,8 @@ Dung lượng còn trống: {2}</value>
     <value>Tác vụ tự động</value>
   </data>
   <data name="ViewPageLaunchGameDangerousDescriptionHint" xml:space="preserve">
-    <value>Chức năng tiêm và phần mềm này thuộc về plugin, công cụ bên thứ ba hoặc dịch vụ không được ủy quyền hợp pháp theo khoản 2 điều 10 của thỏa thuận người dùng miHoYo. Tiếp tục sử dụng cho thấy bạn đã biết hành vi này rất nguy hiểm và hậu quả do bạn tự chịu trách nhiệm.
-Vì lý do an toàn, chúng tôi bảo lưu quyền quyết định độc lập thay đổi, chấm dứt, tạm dừng việc bạn sử dụng chức năng này bất cứ lúc nào mà không cần thông báo trước cho bạn.</value>
+    <value>本软件及注入功能属于《米哈游用户协议》第十条第二款规定的“插件、外挂或非经合法授权的第三方工具/服务”，您需要自行承担因使用内容而引起的所有风险，本软件无法且不会对您因前述风险而导致的任何损失或损害承担责任。
+出于安全因素考虑，我们有权不经向您特别通知而对软件及相关功能进行更新，或者对软件的部分功能效果进行改变或限制。</value>
   </data>
   <data name="ViewPageLaunchGameDisableFogDescription" xml:space="preserve">
     <value>Xóa sương mù trong kết xuất ánh sáng</value>
