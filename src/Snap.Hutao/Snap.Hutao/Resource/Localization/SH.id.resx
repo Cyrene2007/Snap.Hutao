@@ -3049,7 +3049,7 @@ Ruang Tersedia: {2}</value>
     <value>Tidak Dapat Membuka Batas Frame Rate?</value>
   </data>
   <data name="ViewPageLaunchGameUnlockFpsDescription" xml:space="preserve">
-    <value>Silakan nonaktifkan V-Sync dalam pengaturan permainan. Anda mungkin memerlukan kartu grafis yang mendukung kinerja tinggi untuk membatasi frame rate yang tinggi, atur nilai ke -1 untuk frame rate tak terbatas</value>
+    <value>Silakan nonaktifkan V-Sync dalam pengaturan permainan. Anda mungkin memerlukan kartu grafis yang mendukung kinerja tinggi untuk membatasi frame rate yang tinggi.</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccountDescription" xml:space="preserve">
     <value>Masuk dengan pengguna {米游社} / HoYoLAB yang saat ini dipilih, parameter mulai perlu diaktifkan</value>
