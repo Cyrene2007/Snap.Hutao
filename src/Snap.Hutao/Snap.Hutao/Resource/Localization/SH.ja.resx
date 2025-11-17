@@ -3051,7 +3051,7 @@
     <value>フレームレート上限を解除できませんか？</value>
   </data>
   <data name="ViewPageLaunchGameUnlockFpsDescription" xml:space="preserve">
-    <value>より高い FPS をサポートするために高性能な GPU を必要とします。ゲーム内の「垂直同期」を無効にし、無制限のフレームレートのために値を -1 に設定してください。</value>
+    <value>ゲーム内のグラフィック設定で垂直同期を無効にしてください。フレームレートを上げるにはもっと高性能のグラフィックボードが必要となります。</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccountDescription" xml:space="preserve">
     <value>今は選ばれている 米游社 / HoYoLAB ユーザーを使用してログインします。「起動のパラメーター」を有効にする必要があります。</value>
