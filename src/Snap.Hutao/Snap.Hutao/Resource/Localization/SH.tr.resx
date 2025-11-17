@@ -3049,7 +3049,7 @@ Kullanılabilir Alan: {2}</value>
     <value>Kare Hızı Üst Sınırı Kaldırılamıyor?</value>
   </data>
   <data name="ViewPageLaunchGameUnlockFpsDescription" xml:space="preserve">
-    <value>Lütfen oyun içinde "Dikey Senkronizasyon" seçeneğini kapatın, daha yüksek kare hızını desteklemek için yüksek performanslı bir GPU gerekir ve sınırsız kare hızı için değeri -1 olarak ayarlayın</value>
+    <value>请在游戏内关闭「垂直同步」选项，需要高性能的显卡以支持更高的帧率</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccountDescription" xml:space="preserve">
     <value>Şu anda seçili olan 米游社 / HoYoLAB kullanıcısı ile oturum açın. Başlatma parametreleri etkinleştirilmelidir</value>
