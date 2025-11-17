@@ -3049,7 +3049,7 @@ Dung lượng còn trống: {2}</value>
     <value>Không thể mở khóa giới hạn tốc độ khung hình?</value>
   </data>
   <data name="ViewPageLaunchGameUnlockFpsDescription" xml:space="preserve">
-    <value>Vui lòng tắt tùy chọn "Vertical Sync" trong trò chơi, cần card đồ họa hiệu suất cao để hỗ trợ tốc độ khung hình cao hơn, đặt giá trị thành -1 để có tốc độ khung hình không giới hạn</value>
+    <value>请在游戏内关闭垂直同步选项，需要高性能的显卡以支持更高的帧率</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccountDescription" xml:space="preserve">
     <value>Đăng nhập bằng người dùng {米游社} / HoYoLAB hiện đã chọn, cần bật "Tham số khởi động"</value>
