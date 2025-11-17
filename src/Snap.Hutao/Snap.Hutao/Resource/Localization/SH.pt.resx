@@ -3049,7 +3049,7 @@ Espaço disponível: {2}</value>
     <value>Incapaz de Desbloquear Limite de Taxa de Fotogramas?</value>
   </data>
   <data name="ViewPageLaunchGameUnlockFpsDescription" xml:space="preserve">
-    <value>Desative o V-Sync nas configurações do jogo. Talvez você precise de uma placa gráfica de alto desempenho para suportar um limite alto de taxa de quadros, e defina o valor para -1 para taxa de quadros ilimitada.</value>
+    <value>Desative o V-Sync nas configurações do jogo. Talvez você precise de uma placa gráfica de alto desempenho para suportar um limite alto de taxa de quadros.</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccountDescription" xml:space="preserve">
     <value>Use o utilizador {米游社} / HoYoLAB atualmente selecionado para iniciar sessão, os parâmetros de inicialização precisam ser ativados</value>
