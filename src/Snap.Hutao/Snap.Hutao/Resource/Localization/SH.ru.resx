@@ -3053,7 +3053,7 @@
     <value>Не удаётся разблокировать ограничение частоты кадров?</value>
   </data>
   <data name="ViewPageLaunchGameUnlockFpsDescription" xml:space="preserve">
-    <value>Пожалуйста, отключите опцию «Вертикальная синхронизация» в игре, для поддержки более высокой частоты кадров требуется высокопроизводительная видеокарта, установите значение -1 для неограниченной частоты кадров.</value>
+    <value>请在游戏内关闭垂直同步选项，需要高性能的显卡以支持更高的帧率</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccountDescription" xml:space="preserve">
     <value>Выполните вход, используя выбранного пользователя Миюшэ / HoYoLAB. Необходимо включить «Параметры запуска»</value>
