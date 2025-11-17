@@ -3049,7 +3049,7 @@ Espacio disponible: {2}</value>
     <value>¿No se puede desbloquear el límite de tasa de fotogramas?</value>
   </data>
   <data name="ViewPageLaunchGameUnlockFpsDescription" xml:space="preserve">
-    <value>Desactiva la opción "Sincronización vertical" dentro del juego, necesita una GPU de alto rendimiento para soportar una mayor velocidad de fotogramas, establece el valor en -1 para fotogramas ilimitados.</value>
+    <value>请在游戏内关闭「垂直同步」选项，需要高性能的显卡以支持更高的帧率</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccountDescription" xml:space="preserve">
     <value>Inicia sesión con el usuario de 米游社 / HoYoLAB seleccionado actualmente. Es necesario activar los "parámetros de inicio"</value>
