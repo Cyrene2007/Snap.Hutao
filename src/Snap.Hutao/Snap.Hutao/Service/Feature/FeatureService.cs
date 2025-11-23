@@ -42,7 +42,7 @@ internal sealed partial class FeatureService : IFeatureService
 
             using (HttpClient httpClient = httpClientFactory.CreateClient(nameof(FeatureService)))
             {
-                return (await builder.SendAsync<TFeature>(httpClient, CancellationToken.None).ConfigureAwait(false)).Body;
+                return (await builder.SendAsync<TFeature>(httpClient, System.Threading.CancellationToken.None).ConfigureAwait(false)).Body;
             }
         }).ConfigureAwait(false);
     }

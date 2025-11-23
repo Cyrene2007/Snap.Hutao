@@ -18,7 +18,7 @@ internal sealed class AsyncManualResetEvent
     public void Set()
     {
         TaskCompletionSource tcs = this.tcs;
-        Task.Factory.StartNew(s => ((TaskCompletionSource)s!).TrySetResult(), tcs, CancellationToken.None, TaskCreationOptions.PreferFairness, TaskScheduler.Default);
+        Task.Factory.StartNew(s => ((TaskCompletionSource)s!).TrySetResult(), tcs, System.Threading.CancellationToken.None, TaskCreationOptions.PreferFairness, TaskScheduler.Default);
         tcs.Task.Wait();
     }
 

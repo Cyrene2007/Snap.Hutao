@@ -143,7 +143,7 @@ internal sealed class ServiceRecipientNavigationViewBehavior : BehaviorBase<Navi
 
         if (currentPageType == pageType)
         {
-            CancellationToken token = currentPage is ScopedPage scopedPage ? scopedPage.CancellationToken : CancellationToken.None;
+            CancellationToken token = currentPage is ScopedPage scopedPage ? scopedPage.CancellationToken : System.Threading.CancellationToken.None;
             NavigationExtraDataSupport.NotifyRecipientAsync(frame.Content, data, token).SafeForget();
             return NavigationResult.AlreadyNavigatedTo;
         }

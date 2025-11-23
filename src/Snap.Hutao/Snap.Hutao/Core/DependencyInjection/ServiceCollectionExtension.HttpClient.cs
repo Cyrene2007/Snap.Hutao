@@ -6,6 +6,7 @@ using Snap.Hutao.Core.IO.Http;
 using Snap.Hutao.Core.IO.Http.Proxy;
 using Snap.Hutao.Service.Game.Package.Advanced;
 using Snap.Hutao.Web.Hoyolab;
+using Snap.Hutao.Web.Hoyolab.DataSigning;
 using Snap.Hutao.Win32;
 using System.Globalization;
 using System.Net;

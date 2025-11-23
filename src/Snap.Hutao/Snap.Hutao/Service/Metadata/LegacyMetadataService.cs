@@ -238,7 +238,7 @@ internal sealed partial class LegacyMetadataService : IMetadataService
         using (HttpClient httpClient = httpClientFactory.CreateClient(nameof(MetadataService)))
         {
             HttpRequestMessageBuilder builder = requestBuilderFactory.Create(metadataOptions.GetTemplateEndpoint()).Get();
-            Response<MetadataTemplate>? resp = await builder.SendAsync<Response<MetadataTemplate>>(httpClient, CancellationToken.None).ConfigureAwait(false);
+            Response<MetadataTemplate>? resp = await builder.SendAsync<Response<MetadataTemplate>>(httpClient, System.Threading.CancellationToken.None).ConfigureAwait(false);
 
             if (!ResponseValidator.TryValidateWithoutUINotification(Response.DefaultIfNull(resp), out MetadataTemplate? metadataTemplate))
             {
@@ -275,7 +275,7 @@ internal sealed partial class LegacyMetadataService : IMetadataService
     {
         MetadataDownloadContext context = new(metadataOptions, template);
 
-        await Parallel.ForEachAsync(metaHashMap, token, async (pair, token) =>
+        await Parallel.ForEachAsync(metaHashMap, token, async (pair, cancellationToken) =>
         {
             (string fileName, string metaHash) = pair;
 
@@ -288,13 +288,13 @@ internal sealed partial class LegacyMetadataService : IMetadataService
                     Directory.CreateDirectory(directory);
                 }
 
-                if (await ValidateMetadataSourceFileAsync(context, fileFullPath, fileName, metaHash, token).ConfigureAwait(false))
+                if (await ValidateMetadataSourceFileAsync(context, fileFullPath, fileName, metaHash, cancellationToken).ConfigureAwait(false))
                 {
                     return;
                 }
 
-                await DownloadMetadataSourceFileAsync(context, fileFullName, token).ConfigureAwait(true);
-                await ValidateMetadataSourceFileAsync(context, fileFullPath, fileName, metaHash, token).ConfigureAwait(false);
+                await DownloadMetadataSourceFileAsync(context, fileFullName, cancellationToken).ConfigureAwait(true);
+                await ValidateMetadataSourceFileAsync(context, fileFullPath, fileName, metaHash, cancellationToken).ConfigureAwait(false);
             }
             catch (Exception)
             {
